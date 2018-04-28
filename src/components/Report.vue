@@ -65,6 +65,9 @@ export default {
     }
   },
   mounted () {
+    // http://localhost:8080/#/?first=1&second=12&third=5
+    alert(this.$route.query.first)
+    alert(this.$route.query.second)
     this.fillData()
   },
   methods: {
